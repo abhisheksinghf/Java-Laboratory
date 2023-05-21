@@ -1,0 +1,19 @@
+class Box
+{
+	double width;
+	double height;
+	double depth;
+}
+public class ClassDemo {
+	public static void main(String args[])
+	{
+		double vol;
+		Box mybox = new Box();
+		mybox.width = 10;
+		mybox.depth = 15;
+		mybox.height = 20;
+		vol = mybox.width*mybox.height*mybox.depth;
+		
+		System.out.println("Volume is "+vol);
+	}
+}

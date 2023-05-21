@@ -1,0 +1,21 @@
+
+import java.util.*;
+import java.time.*;
+
+public class LocalMethods {
+	public static void main(String[] args)
+	{
+	
+		LocalDate dt1 = LocalDate.parse("2016-11-17");
+
+		System.out.println("LeapYear : "+dt1.isLeapYear());
+		System.out.println("Month Value : "+dt1.getMonthValue());
+		System.out.println("Day of Month Value : "+dt1.getDayOfMonth());
+		System.out.println("Day of the Year: "+dt1.getDayOfYear());
+		System.out.println("Day of the Week : "+dt1.getDayOfWeek());
+		System.out.println("After +23 Days : "+dt1.plusDays(75));
+		System.out.println("After +16 Weeks : "+dt1.plusWeeks(16));
+		System.out.println("After -116 Days : "+dt1.minusDays(16));
+		
+	}
+}
